@@ -1,0 +1,52 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+
+	<action name="register" class="Register" method ="registration">
+        <result name="SUCCESS">/youareregistered.jsp</result>
+	    <result name="FAILURE">/negative.html</result>
+    </action>
+	
+	<action name="login" class="Register" method ="login">
+        <result name="SUCCESS">/home.jsp</result>
+	    <result name="FAILURE">/negative.html</result>
+    </action>
+	
+	<action name="logout" class="Register" method ="logout">
+        <result name="SUCCESS">/logout.jsp</result>
+    </action>
+	
+	<action name="addItems" class="Register" method ="addItems">
+        <result name="SUCCESS">/addItems.jsp</result>
+		<result name="FAILURE">/negative.html</result>
+    </action>
+	
+	<action name="viewAllItems" class="Register" method ="viewAllItems">
+        <result name="SUCCESS">/viewAllitems.jsp</result>
+		<result name="FAILURE">/negative.html</result>
+    </action>
+	
+
+	<action name="viewAllUsers" class="Register" method ="viewAllUsers">
+        <result name="SUCCESS">/allUsers.jsp</result>
+	    <result name="FAILURE">/negative.html</result>
+    </action>
+	
+
+	<action name="addBids" class="Register" method ="addBids">
+        <result name="SUCCESS">/addbid.jsp</result>
+	    <result name="FAILURE">/negative.html</result>
+    </action>
+	
+	<action name="viewMyBids" class="Register" method ="viewMyBids">
+        <result name="SUCCESS">/viewmybid.jsp</result>
+	    <result name="FAILURE">/negative.html</result>
+    </action>
+
+
+		
+    </package>
+</struts>
